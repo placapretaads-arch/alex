@@ -61,10 +61,8 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? "backdrop-blur-xl bg-[#eaebea]/95 border-b border-[#211d1b]/10 header-scrolled" 
-          : "bg-transparent"
+      className={`fixed w-full z-50 transition-all duration-300 bg-white border-b border-[#211d1b]/10 ${
+        isScrolled ? "header-scrolled" : ""
       }`}
       data-testid="header"
     >
