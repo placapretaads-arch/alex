@@ -1,34 +1,152 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Additional app styles */
+
+/* Hero background overlay */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(33, 29, 27, 0.95) 0%,
+    rgba(33, 29, 27, 0.85) 50%,
+    rgba(33, 29, 27, 0.9) 100%
+  );
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Service card hover effect */
+.service-card {
+  transition: all 0.3s ease;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.service-card:hover {
+  border-color: #f4eb24;
+  background-color: rgba(234, 235, 234, 0.05);
 }
 
-.App-link {
-    color: #61dafb;
+/* Differential item styling */
+.differential-item {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.differential-item::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(33, 29, 27, 0.1);
+}
+
+.differential-item::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(33, 29, 27, 0.1);
+}
+
+@media (max-width: 640px) {
+  .differential-item::after {
+    display: none;
+  }
+}
+
+/* Review card */
+.review-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(33, 29, 27, 0.1);
+}
+
+/* Area badge styling */
+.area-badge {
+  transition: all 0.3s ease;
+}
+
+.area-badge:hover {
+  background-color: #f4eb24;
+  color: #211d1b;
+}
+
+/* Emergency section pattern overlay */
+.emergency-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(33, 29, 27, 0.92) 0%,
+    rgba(33, 29, 27, 0.88) 100%
+  );
+}
+
+/* Header scroll effect */
+.header-scrolled {
+  box-shadow: 0 4px 20px rgba(33, 29, 27, 0.1);
+}
+
+/* Mobile menu animation */
+.mobile-menu-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.mobile-menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+/* Button shine effect */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-shine:hover::after {
+  left: 100%;
+}
+
+/* Gallery masonry effect */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Floating button bounce */
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.bounce-animation {
+  animation: bounce-subtle 2s ease-in-out infinite;
 }
