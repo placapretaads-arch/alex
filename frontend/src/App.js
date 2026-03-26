@@ -165,9 +165,9 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo Alex do Guincho */}
           <img 
-            src={ASSETS.logo} 
+            src="https://customer-assets.emergentagent.com/job_agro-socorro-go/artifacts/rasag607_WhatsApp_Image_2026-03-26_at_16.38.52-removebg-preview.png" 
             alt="Alex do Guincho" 
-            className="h-24 md:h-32 w-auto mb-6 mx-auto"
+            className="h-48 md:h-64 lg:h-72 w-auto mb-6 mx-auto"
           />
 
           {/* Overline */}
