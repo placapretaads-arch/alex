@@ -160,32 +160,32 @@ const HeroSection = () => {
       <div className="hero-overlay absolute inset-0" />
       
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 py-16 md:py-24">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Logo Alex do Guincho */}
           <img 
             src={ASSETS.logo} 
             alt="Alex do Guincho" 
-            className="h-24 md:h-32 w-auto mb-6"
+            className="h-24 md:h-32 w-auto mb-6 mx-auto"
           />
 
           {/* Overline */}
           <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#f4eb24] mb-6">
-            Atendimento 24 horas • Goianápolis e Região
+            Atendimento 24h<br />Goianápolis e Região
           </p>
 
           {/* Main Title */}
-          <h1 className="font-['Oswald'] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase text-[#eaebea] mb-6">
-            AUTO SOCORRO<br />
-            <span className="text-[#f4eb24] text-6xl sm:text-7xl md:text-8xl lg:text-[6.5rem]">GOIANÁPOLIS</span>
+          <h1 className="font-['Oswald'] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase text-[#eaebea] mb-6 inline-block">
+            <span className="block">AUTO SOCORRO</span>
+            <span className="block text-[#f4eb24] tracking-[-0.02em]">GOIANÁPOLIS</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl text-[#eaebea]/80 mb-8 max-w-2xl leading-relaxed">
+          <p className="text-lg sm:text-xl text-[#eaebea]/80 mb-8 max-w-2xl leading-relaxed mx-auto">
             Guincho leve, pesado e transporte agrícola com atendimento rápido e seguro em toda região.
           </p>
 
           {/* Features */}
-          <div className="flex flex-wrap gap-4 mb-10">
+          <div className="flex flex-wrap gap-4 mb-10 justify-center">
             {[
               { icon: AlertTriangle, text: "Atendimento 24 horas" },
               { icon: Car, text: "Guincho leve e pesado" },
@@ -203,7 +203,7 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`tel:+${PHONE_1}`}
               className="bg-[#f4eb24] text-[#211d1b] font-bold uppercase tracking-widest hover:bg-[#dcd312] transition-colors px-8 py-5 flex items-center justify-center gap-3 btn-shine"
