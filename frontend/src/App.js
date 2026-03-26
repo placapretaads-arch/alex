@@ -26,7 +26,7 @@ const ASSETS = {
   service2: "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/k1u33p30_WhatsApp%20Image%202026-03-24%20at%2015.11.17-2.jpeg",
   service3: "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/i95yg8rf_WhatsApp%20Image%202026-03-24%20at%2015.11.30.jpeg",
   service4: "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/kvob25yi_WhatsApp%20Image%202026-03-24%20at%2015.11.17.jpeg",
-  bgAsphalt: "https://static.prod-images.emergentagent.com/jobs/a40e9845-d494-4082-b081-c47d89234391/images/6df368999083f3d70929ccdcfd6d4a2894406939eb83e176de1f9cd55f0b1556.png",
+  bgAsphalt: "https://customer-assets.emergentagent.com/job_agro-socorro-go/artifacts/os5yuqri_WhatsApp%20Image%202026-03-24%20at%2015.11.16.jpeg",
   bgPattern: "https://static.prod-images.emergentagent.com/jobs/a40e9845-d494-4082-b081-c47d89234391/images/a33f2258c82cc1fb29a105c08aa32aa44fc0fc57ad106d57fb412fd7eb703964.png"
 };
 

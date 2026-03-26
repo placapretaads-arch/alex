@@ -145,3 +145,15 @@ h1, h2, h3, h4, h5, h6 {
     display: contents !important;
   }
 }
+
+/* Hide Made with Emergent button */
+[data-testid="emergent-badge"],
+a[href*="emergent.sh"],
+div[class*="emergent"],
+button[class*="emergent"],
+.emergent-badge,
+iframe[src*="emergent"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
