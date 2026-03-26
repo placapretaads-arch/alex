@@ -68,21 +68,23 @@ const Header = () => {
     >
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12">
         <div className="flex items-center justify-between h-20 lg:h-24">
-          {/* Desktop Logo - Text */}
+          {/* Desktop Logo */}
           <a href="#" className="hidden lg:block" data-testid="logo-desktop">
-            <span className="font-['Oswald'] text-xl font-bold uppercase tracking-tight text-[#211d1b]">
-              AUTO SOCORRO<br />
-              <span className="text-[#f4eb24]" style={{ WebkitTextStroke: '0.5px #211d1b' }}>GOIANÁPOLIS</span>
-            </span>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_agro-socorro-go/artifacts/mp5iutsz_WhatsApp%20Image%202026-03-23%20at%2012.38.36.png" 
+              alt="Alex do Guincho" 
+              className="h-14 w-auto"
+            />
           </a>
 
-          {/* Mobile Centered Logo - Text */}
+          {/* Mobile Centered Logo */}
           <div className="lg:hidden absolute left-1/2 -translate-x-1/2">
             <a href="#" data-testid="logo-mobile">
-              <span className="font-['Oswald'] text-sm font-bold uppercase tracking-tight text-[#211d1b] text-center block">
-                AUTO SOCORRO<br />
-                <span className="text-[#f4eb24]" style={{ WebkitTextStroke: '0.5px #211d1b' }}>GOIANÁPOLIS</span>
-              </span>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_agro-socorro-go/artifacts/mp5iutsz_WhatsApp%20Image%202026-03-23%20at%2012.38.36.png" 
+                alt="Alex do Guincho" 
+                className="h-10 w-auto"
+              />
             </a>
           </div>
 
