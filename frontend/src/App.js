@@ -553,23 +553,48 @@ const CoverageAreaSection = () => {
             <h2 className="font-['Oswald'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight uppercase text-[#211d1b] mb-6">
               Atendemos <span className="text-[#f4eb24]" style={{ WebkitTextStroke: '1px #211d1b' }}>Toda a Região</span>
             </h2>
-            <p className="text-base sm:text-lg leading-relaxed text-[#211d1b]/80">
+            <p className="text-base sm:text-lg leading-relaxed text-[#211d1b]/80 mb-6">
               Cobrimos Goianápolis e cidades vizinhas com atendimento rápido e eficiente. Não importa onde você esteja, estamos prontos para ajudar.
             </p>
+            
+            {/* Address */}
+            <div className="flex items-start gap-3 mb-8 bg-[#211d1b] text-[#eaebea] p-4">
+              <MapPin size={24} className="text-[#f4eb24] flex-shrink-0 mt-1" />
+              <div>
+                <p className="font-bold">Nosso Endereço:</p>
+                <p>Av. Câmara Filho, 3674 - 4234</p>
+                <p>Goianápolis - GO, 75170-000</p>
+              </div>
+            </div>
+
+            {/* Areas Grid */}
+            <div className="grid grid-cols-2 gap-3">
+              {areas.map((area, index) => (
+                <div
+                  key={index}
+                  className="area-badge flex items-center gap-2 bg-[#211d1b] text-[#eaebea] px-4 py-3 cursor-default"
+                  data-testid={`area-${index}`}
+                >
+                  <MapPin size={16} className="text-[#f4eb24] flex-shrink-0" />
+                  <span className="font-medium text-sm">{area}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Areas Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {areas.map((area, index) => (
-              <div
-                key={index}
-                className="area-badge flex items-center gap-2 bg-[#211d1b] text-[#eaebea] px-4 py-4 cursor-default"
-                data-testid={`area-${index}`}
-              >
-                <MapPin size={18} className="text-[#f4eb24] flex-shrink-0" />
-                <span className="font-medium">{area}</span>
-              </div>
-            ))}
+          {/* Map */}
+          <div className="w-full h-[400px] lg:h-[500px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8847076307584!2d-49.02361892469287!3d-16.50722298424656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef3a3a3a3a3a3%3A0x0!2sAv.%20C%C3%A2mara%20Filho%2C%203674%20-%20Goian%C3%A1polis%2C%20GO%2C%2075170-000!5e0!3m2!1spt-BR!2sbr!4v1679900000000!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização Auto Socorro Goianápolis"
+              className="w-full h-full"
+            ></iframe>
           </div>
         </div>
       </div>
