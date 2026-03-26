@@ -1,0 +1,140 @@
+{
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast (Archetype 4)",
+  "emotional_tone": "Reliable, Fast, Authoritative, Safe, Industrial, Urgent",
+  "typography": {
+    "fonts": {
+      "headings": "'Cabinet Grotesk', sans-serif",
+      "body": "'IBM Plex Sans', sans-serif"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase",
+      "h2": "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight uppercase",
+      "h3": "text-2xl sm:text-3xl font-semibold tracking-tight",
+      "h4": "text-xl sm:text-2xl font-medium",
+      "body": "text-base sm:text-lg leading-relaxed text-[#211d1b]/80",
+      "overline": "text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#211d1b]/60"
+    }
+  },
+  "colors": {
+    "primary": "#f4eb24",
+    "primary_hover": "#dcd312",
+    "background_light": "#eaebea",
+    "background_dark": "#211d1b",
+    "text_dark": "#211d1b",
+    "text_light": "#eaebea",
+    "border_light": "rgba(33, 29, 27, 0.1)",
+    "border_dark": "rgba(234, 235, 234, 0.1)"
+  },
+  "layout_and_spacing": {
+    "container": "max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12",
+    "section_padding": "py-20 md:py-32",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8",
+    "border_radius": "rounded-none"
+  },
+  "sections_strategy": {
+    "header": {
+      "style": "fixed w-full z-50 transition-all duration-300",
+      "background": "backdrop-blur-xl bg-[#eaebea]/95 border-b border-[#211d1b]/10",
+      "mobile": "Logo perfectly absolute-centered. Hamburger icon on right.",
+      "desktop": "Logo left, links center, prominent 'Ligar Agora' button right."
+    },
+    "hero": {
+      "style": "min-h-[90vh] flex items-center relative overflow-hidden bg-[#211d1b] pt-[100px]",
+      "background": "Use image 'background_asphalt' with a heavy bg-[#211d1b]/85 overlay. Add a subtle radial gradient behind text.",
+      "content": "Huge typography H1 left aligned. Text: 'AUTO SOCORRO GOIANÁPOLIS'. Focus on 24/7 service. Two large CTAs: Yellow 'Ligar Agora' and Outline 'WhatsApp'. Include 'react-fast-marquee' near the bottom acting as an 'Editorial Ribbon' reading 'ATENDIMENTO 24 HORAS - GOIANÁPOLIS E REGIÃO - GUINCHO LEVE E PESADO'."
+    },
+    "about": {
+      "style": "bg-[#eaebea] text-[#211d1b]",
+      "layout": "Grid cols-1 md:grid-cols-2 gap-12 lg:gap-24. Left side: Text and trust markers. Right side: Image gallery overlapping (Grid Borders style).",
+      "details": "High contrast typography. Highlight 24/7 reliability and region."
+    },
+    "services": {
+      "style": "bg-[#211d1b] text-[#eaebea]",
+      "layout": "Bento Grid (Mode A: The 'Tetris' Grid). 6 services (Guincho leve, pesado, transporte agrícola, auto socorro 24h, atendimento rodoviário, transporte programado).",
+      "card_style": "Sharp edges, 1px border border-[#eaebea]/10, hover:border-[#f4eb24] hover:bg-[#eaebea]/5 transition-all duration-300. Solid color, minimal layout. Yellow icon on top left."
+    },
+    "differentiators": {
+      "style": "bg-[#eaebea] text-[#211d1b]",
+      "layout": "Grid Borders Look. Grid cols-1 sm:grid-cols-2 lg:grid-cols-4. 7 items, last one can span 2 cols.",
+      "visuals": "Big `#f4eb24` colored background icons in dark squares, bold titles, minimal description. The Grid Borders look (technical, borders on right and bottom)."
+    },
+    "gallery": {
+      "style": "bg-[#211d1b] text-[#eaebea] pt-20 pb-0",
+      "layout": "Masonry or asymmetrical grid of the 4 service images. Minimal gaps (gap-2 or gap-4). Images should have hover:scale-105 transition."
+    },
+    "coverage_area": {
+      "style": "bg-[#eaebea] text-[#211d1b]",
+      "layout": "Two columns. Huge typography for regions, showing dominance. Use MapPin icon."
+    },
+    "emergency_call": {
+      "style": "relative py-32 overflow-hidden",
+      "background": "Use 'background_pattern' image with bg-[#211d1b]/90 overlay.",
+      "content": "Massive yellow text for phone numbers: (62) 98404-3652 / 99156-3645. Focus on extreme urgency. Center alignment for max impact."
+    },
+    "reviews": {
+      "style": "bg-[#eaebea] text-[#211d1b]",
+      "layout": "3-column grid of review cards. Minimalist design: quote, stars in yellow, name."
+    },
+    "footer": {
+      "style": "bg-[#211d1b] text-[#eaebea] pt-24 pb-32 md:pb-12",
+      "layout": "Massive logo/text on top, multi-column links below, strict grid structure. Note the extra bottom padding on mobile to account for fixed buttons."
+    },
+    "floating_actions": {
+      "mobile": "fixed bottom-0 left-0 w-full z-50 flex border-t border-[#211d1b]/20 lg:hidden. Two buttons 50% width. Left: 'Ligar' (bg-[#211d1b] text-[#f4eb24]). Right: 'WhatsApp' (bg-[#25D366] text-white).",
+      "desktop": "fixed bottom-8 right-8 z-50 hidden lg:flex. Circular WhatsApp button with pulse animation."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#f4eb24] text-[#211d1b] font-bold uppercase tracking-widest hover:bg-[#dcd312] transition-colors rounded-none px-8 py-5 flex items-center justify-center gap-3 w-fit",
+      "secondary": "bg-transparent border-2 border-[#f4eb24] text-[#f4eb24] font-bold uppercase tracking-widest hover:bg-[#f4eb24]/10 transition-colors rounded-none px-8 py-5 flex items-center justify-center gap-3 w-fit",
+      "dark": "bg-[#211d1b] text-[#eaebea] font-bold uppercase tracking-widest hover:bg-[#1a1715] transition-colors rounded-none px-8 py-5 flex items-center justify-center gap-3 w-fit"
+    }
+  },
+  "media": {
+    "logo": {
+      "url": "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/0twt2x8r_WhatsApp%20Image%202026-03-23%20at%2012.38.36.png",
+      "description": "Company Logo"
+    },
+    "service_1": {
+      "url": "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/pxeqkyvv_WhatsApp%20Image%202026-03-24%20at%2015.11.16.jpeg",
+      "description": "Tow truck in action - light towing"
+    },
+    "service_2": {
+      "url": "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/k1u33p30_WhatsApp%20Image%202026-03-24%20at%2015.11.17-2.jpeg",
+      "description": "Tow truck with heavy load"
+    },
+    "service_3": {
+      "url": "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/i95yg8rf_WhatsApp%20Image%202026-03-24%20at%2015.11.30.jpeg",
+      "description": "Agricultural transport"
+    },
+    "service_4": {
+      "url": "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/kvob25yi_WhatsApp%20Image%202026-03-24%20at%2015.11.17.jpeg",
+      "description": "General auto service"
+    },
+    "background_asphalt": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/a40e9845-d494-4082-b081-c47d89234391/images/6df368999083f3d70929ccdcfd6d4a2894406939eb83e176de1f9cd55f0b1556.png",
+      "description": "Dark asphalt texture for hero section"
+    },
+    "background_pattern": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/a40e9845-d494-4082-b081-c47d89234391/images/a33f2258c82cc1fb29a105c08aa32aa44fc0fc57ad106d57fb412fd7eb703964.png",
+      "description": "Industrial warning stripes pattern for emergency call CTA section"
+    }
+  },
+  "testing": {
+    "data_testid_rules": "All interactive elements (buttons, links, form inputs) MUST have a data-testid attribute in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "NOTE: You are working with React .js files, NOT .tsx. Use standard JS/JSX syntax.",
+    "Use pure HTML + Tailwind for layout. Do NOT use Shadcn cards for main sections; build custom divs to match the brutalist/industrial aesthetic with sharp corners (rounded-none).",
+    "Ensure the color palette uses EXCLUSIVELY the provided hex codes: #eaebea, #211d1b, #f4eb24. Do not use generic tailwind slate/gray classes.",
+    "Implement the Mobile-first fixed floating action bar at the bottom: 2 buttons (Ligar, WhatsApp) taking up exactly 50% width each, visible ONLY on mobile (lg:hidden).",
+    "On desktop, show a fixed circular WhatsApp button in the bottom right corner with a subtle pulse animation (hidden on mobile).",
+    "In the mobile Header, use absolute positioning (left-1/2 -translate-x-1/2) to perfectly center the logo, and put the hamburger menu on the right edge.",
+    "Use `lucide-react` for all icons (Phone, MapPin, Truck, AlertTriangle, ShieldCheck).",
+    "Add `react-fast-marquee` package and use it as a 'Kinetic Texture' banner in the Hero section.",
+    "Ensure typography matches the bold industrial vibe: Use standard Google fonts imports for 'Cabinet Grotesk' (or similar like 'Outfit' or 'Oswald' if Grotesk isn't directly on Google Fonts, but prefer local/font-face or a strong alternative like 'Oswald' for headers) and 'IBM Plex Sans' for body.",
+    "Add `data-testid` to all CTA buttons, like `data-testid='hero-call-btn'`, `data-testid='mobile-whatsapp-btn'`."
+  ]
+}
