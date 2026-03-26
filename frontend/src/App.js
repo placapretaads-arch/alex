@@ -21,7 +21,7 @@ import {
 
 // Assets URLs
 const ASSETS = {
-  logo: "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/0twt2x8r_WhatsApp%20Image%202026-03-23%20at%2012.38.36.png",
+  logo: "https://customer-assets.emergentagent.com/job_agro-socorro-go/artifacts/phj7ps3f_WhatsApp%20Image%202026-03-23%20at%2012.38.36.jpeg",
   service1: "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/pxeqkyvv_WhatsApp%20Image%202026-03-24%20at%2015.11.16.jpeg",
   service2: "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/k1u33p30_WhatsApp%20Image%202026-03-24%20at%2015.11.17-2.jpeg",
   service3: "https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/i95yg8rf_WhatsApp%20Image%202026-03-24%20at%2015.11.30.jpeg",
@@ -176,7 +176,7 @@ const HeroSection = () => {
           {/* Main Title */}
           <h1 className="font-['Oswald'] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase text-[#eaebea] mb-6">
             AUTO SOCORRO<br />
-            <span className="text-[#f4eb24]">GOIANÁPOLIS</span>
+            <span className="text-[#f4eb24] text-6xl sm:text-7xl md:text-8xl lg:text-[6.5rem]">GOIANÁPOLIS</span>
           </h1>
 
           {/* Subtitle */}
