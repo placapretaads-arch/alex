@@ -68,23 +68,21 @@ const Header = () => {
     >
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12">
         <div className="flex items-center justify-between h-20 lg:h-24">
-          {/* Desktop Logo */}
+          {/* Desktop Logo - Text */}
           <a href="#" className="hidden lg:block" data-testid="logo-desktop">
-            <img 
-              src={ASSETS.logo} 
-              alt="Auto Socorro Goianápolis" 
-              className="h-16 w-auto"
-            />
+            <span className="font-['Oswald'] text-xl font-bold uppercase tracking-tight text-[#211d1b]">
+              AUTO SOCORRO<br />
+              <span className="text-[#f4eb24]" style={{ WebkitTextStroke: '0.5px #211d1b' }}>GOIANÁPOLIS</span>
+            </span>
           </a>
 
-          {/* Mobile Centered Logo */}
+          {/* Mobile Centered Logo - Text */}
           <div className="lg:hidden absolute left-1/2 -translate-x-1/2">
             <a href="#" data-testid="logo-mobile">
-              <img 
-                src={ASSETS.logo} 
-                alt="Auto Socorro Goianápolis" 
-                className="h-12 w-auto"
-              />
+              <span className="font-['Oswald'] text-sm font-bold uppercase tracking-tight text-[#211d1b] text-center block">
+                AUTO SOCORRO<br />
+                <span className="text-[#f4eb24]" style={{ WebkitTextStroke: '0.5px #211d1b' }}>GOIANÁPOLIS</span>
+              </span>
             </a>
           </div>
 
@@ -163,6 +161,13 @@ const HeroSection = () => {
       
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 py-16 md:py-24">
         <div className="max-w-4xl">
+          {/* Logo Alex do Guincho */}
+          <img 
+            src={ASSETS.logo} 
+            alt="Alex do Guincho" 
+            className="h-24 md:h-32 w-auto mb-6"
+          />
+
           {/* Overline */}
           <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#f4eb24] mb-6">
             Atendimento 24 horas • Goianápolis e Região
@@ -211,7 +216,7 @@ const HeroSection = () => {
               href={`https://wa.me/${PHONE_1}?text=${WHATSAPP_MESSAGE}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-transparent border-2 border-[#f4eb24] text-[#f4eb24] font-bold uppercase tracking-widest hover:bg-[#f4eb24]/10 transition-colors px-8 py-5 flex items-center justify-center gap-3"
+              className="bg-[#25D366] text-white font-bold uppercase tracking-widest hover:bg-[#1da851] transition-colors px-8 py-5 flex items-center justify-center gap-3"
               data-testid="hero-whatsapp-btn"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -260,8 +265,8 @@ const AboutSection = () => {
               Sobre a Empresa
             </p>
             <h2 className="font-['Oswald'] text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight uppercase text-[#211d1b] mb-6">
-              Experiência e Confiança no<br />
-              <span className="text-[#f4eb24]" style={{ WebkitTextStroke: '1px #211d1b' }}>Auto Socorro</span>
+              Experiência e Confiança<br />
+              em <span className="text-[#f4eb24]" style={{ WebkitTextStroke: '1px #211d1b' }}>Auto Socorro</span>
             </h2>
             <p className="text-base sm:text-lg leading-relaxed text-[#211d1b]/80 mb-8">
               A <strong>Auto Socorro Goianápolis e Agro Serviços LTDA</strong> é especializada em guincho e transporte com atendimento rápido e seguro. Trabalhamos com veículos leves, pesados e máquinas agrícolas, garantindo agilidade e segurança em qualquer situação.
@@ -274,8 +279,8 @@ const AboutSection = () => {
             <div className="flex flex-wrap gap-6">
               {[
                 { value: "24h", label: "Atendimento" },
-                { value: "10+", label: "Anos de experiência" },
-                { value: "1000+", label: "Clientes atendidos" }
+                { value: "+10", label: "Anos de experiência" },
+                { value: "+1000", label: "Clientes atendidos" }
               ].map((item, index) => (
                 <div key={index} className="text-center">
                   <p className="font-['Oswald'] text-4xl font-bold text-[#f4eb24]" style={{ WebkitTextStroke: '1px #211d1b' }}>
@@ -679,7 +684,7 @@ const ReviewsSection = () => {
             Avaliações
           </p>
           <h2 className="font-['Oswald'] text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight uppercase text-[#211d1b]">
-            O Que Nossos <span className="text-[#f4eb24]" style={{ WebkitTextStroke: '1px #211d1b' }}>Clientes Dizem</span>
+            O Que Nossos<br /><span className="text-[#f4eb24]" style={{ WebkitTextStroke: '1px #211d1b' }}>Clientes Dizem</span>
           </h2>
         </div>
 
