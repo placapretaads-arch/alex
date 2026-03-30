@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Auto Socorro Goianápolis - Guincho 24 horas, guincho leve, pesado e transporte agrícola. Atendimento rápido em Goianápolis e região.">
+    <meta name="keywords" content="guincho, auto socorro, Goianápolis, guincho 24 horas, transporte agrícola, guincho pesado, guincho leve">
+    <meta name="author" content="Auto Socorro Goianápolis">
+    <meta name="theme-color" content="#211d1b">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Auto Socorro Goianápolis - Guincho 24h">
+    <meta property="og:description" content="Guincho leve, pesado e transporte agrícola com atendimento rápido e seguro em toda região.">
+    <meta property="og:type" content="website">
+    
+    <title>Auto Socorro Goianápolis - Guincho 24 Horas</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <!-- Desktop Logo -->
+            <a href="#" class="logo-desktop">
+                <span class="logo-text">
+                    AUTO SOCORRO<br>
+                    <span class="logo-highlight">GOIANÁPOLIS</span>
+                </span>
+            </a>
+
+            <!-- Mobile Logo (centered) -->
+            <div class="logo-mobile-wrapper">
+                <a href="#" class="logo-mobile">
+                    <span class="logo-text-mobile">
+                        AUTO SOCORRO<br>
+                        <span class="logo-highlight">GOIANÁPOLIS</span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <!-- Desktop CTA -->
+            <a href="tel:+5562984043652" class="header-cta btn-shine">
+                <i data-lucide="phone" class="icon-sm"></i>
+                <span>Ligar Agora</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <nav class="mobile-nav">
+                <a href="#servicos" onclick="closeMobileMenu()">Serviços</a>
+                <a href="#sobre" onclick="closeMobileMenu()">Sobre</a>
+                <a href="#galeria" onclick="closeMobileMenu()">Galeria</a>
+                <a href="#contato" onclick="closeMobileMenu()">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section" style="background-image: url('https://customer-assets.emergentagent.com/job_agro-socorro-go/artifacts/os5yuqri_WhatsApp%20Image%202026-03-24%20at%2015.11.16.jpeg');">
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="hero-inner">
+                    <!-- Logo -->
+                    <img 
+                        src="https://customer-assets.emergentagent.com/job_agro-socorro-go/artifacts/phj7ps3f_WhatsApp%20Image%202026-03-23%20at%2012.38.36.jpeg" 
+                        alt="Alex do Guincho" 
+                        class="hero-logo"
+                    >
+
+                    <!-- Overline -->
+                    <p class="hero-overline">
+                        Atendimento 24h<br>Goianápolis e Região
+                    </p>
+
+                    <!-- Main Title -->
+                    <h1 class="hero-title">
+                        <span>AUTO SOCORRO</span>
+                        <span class="hero-title-highlight">GOIANÁPOLIS</span>
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="hero-subtitle">
+                        Guincho leve, pesado e transporte agrícola com atendimento rápido e seguro em toda região.
+                    </p>
+
+                    <!-- Features -->
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i data-lucide="alert-triangle" class="feature-icon"></i>
+                            <span>Atendimento 24 horas</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i data-lucide="car" class="feature-icon"></i>
+                            <span>Guincho leve e pesado</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i data-lucide="tractor" class="feature-icon"></i>
+                            <span>Transporte agrícola</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i data-lucide="map-pin" class="feature-icon"></i>
+                            <span>Goianápolis e região</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta">
+                        <a href="tel:+5562984043652" class="btn btn-primary btn-shine">
+                            <i data-lucide="phone" class="icon-sm"></i>
+                            Ligar Agora
+                        </a>
+                        <a href="https://wa.me/5562984043652?text=Ol%C3%A1!%20Preciso%20de%20um%20guincho.%20Podem%20me%20ajudar?" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marquee Banner -->
+            <div class="hero-marquee">
+                <div class="marquee-track">
+                    <span class="marquee-item">ATENDIMENTO 24 HORAS</span>
+                    <span class="marquee-dot">•</span>
+                    <span class="marquee-item">GOIANÁPOLIS E REGIÃO</span>
+                    <span class="marquee-dot">•</span>
+                    <span class="marquee-item">GUINCHO LEVE E PESADO</span>
+                    <span class="marquee-dot">•</span>
+                    <span class="marquee-item">TRANSPORTE AGRÍCOLA</span>
+                    <span class="marquee-dot">•</span>
+                    <span class="marquee-item">ATENDIMENTO 24 HORAS</span>
+                    <span class="marquee-dot">•</span>
+                    <span class="marquee-item">GOIANÁPOLIS E REGIÃO</span>
+                    <span class="marquee-dot">•</span>
+                    <span class="marquee-item">GUINCHO LEVE E PESADO</span>
+                    <span class="marquee-dot">•</span>
+                    <span class="marquee-item">TRANSPORTE AGRÍCOLA</span>
+                    <span class="marquee-dot">•</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Text Content -->
+                    <div class="about-text">
+                        <p class="section-overline">Sobre a Empresa</p>
+                        <h2 class="section-title">
+                            Experiência e Confiança<br>
+                            em <span class="text-highlight">Auto Socorro</span>
+                        </h2>
+                        <p class="about-description">
+                            A <strong>Auto Socorro Goianápolis e Agro Serviços LTDA</strong> é especializada em guincho e transporte com atendimento rápido e seguro. Trabalhamos com veículos leves, pesados e máquinas agrícolas, garantindo agilidade e segurança em qualquer situação.
+                        </p>
+                        <p class="about-description">
+                            <strong>Atendimento 24 horas por dia</strong> em Goianápolis e toda região.
+                        </p>
+
+                        <!-- Trust markers -->
+                        <div class="trust-markers">
+                            <div class="trust-item">
+                                <p class="trust-value">24h</p>
+                                <p class="trust-label">Atendimento</p>
+                            </div>
+                            <div class="trust-item">
+                                <p class="trust-value">+10</p>
+                                <p class="trust-label">Anos de experiência</p>
+                            </div>
+                            <div class="trust-item">
+                                <p class="trust-value">+1000</p>
+                                <p class="trust-label">Clientes atendidos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Grid -->
+                    <div class="about-images">
+                        <div class="about-images-col">
+                            <img src="https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/pxeqkyvv_WhatsApp%20Image%202026-03-24%20at%2015.11.16.jpeg" alt="Serviço de guincho" class="about-img about-img-large">
+                            <img src="https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/i95yg8rf_WhatsApp%20Image%202026-03-24%20at%2015.11.30.jpeg" alt="Transporte agrícola" class="about-img about-img-small">
+                        </div>
+                        <div class="about-images-col about-images-col-offset">
+                            <img src="https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/kvob25yi_WhatsApp%20Image%202026-03-24%20at%2015.11.17.jpeg" alt="Auto socorro" class="about-img about-img-small">
+                            <img src="https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/k1u33p30_WhatsApp%20Image%202026-03-24%20at%2015.11.17-2.jpeg" alt="Guincho pesado" class="about-img about-img-large">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header">
+                    <p class="section-overline-light">Nossos Serviços</p>
+                    <h2 class="section-title-light">
+                        Soluções Completas em <span class="text-yellow">Guincho</span>
+                    </h2>
+                </div>
+
+                <!-- Bento Grid -->
+                <div class="services-grid">
+                    <div class="service-card service-card-half">
+                        <i data-lucide="car" class="service-icon"></i>
+                        <h3 class="service-title">Guincho Leve</h3>
+                        <p class="service-desc">Remoção de carros, motos e utilitários</p>
+                    </div>
+                    <div class="service-card service-card-half">
+                        <i data-lucide="truck" class="service-icon"></i>
+                        <h3 class="service-title">Guincho Pesado</h3>
+                        <p class="service-desc">Caminhões, vans e veículos grandes</p>
+                    </div>
+                    <div class="service-card service-card-third">
+                        <i data-lucide="tractor" class="service-icon"></i>
+                        <h3 class="service-title">Transporte Agrícola</h3>
+                        <p class="service-desc">Tratores e implementos</p>
+                    </div>
+                    <div class="service-card service-card-third">
+                        <i data-lucide="wrench" class="service-icon"></i>
+                        <h3 class="service-title">Auto Socorro 24h</h3>
+                        <p class="service-desc">Pane seca, bateria, pneu furado</p>
+                    </div>
+                    <div class="service-card service-card-third">
+                        <i data-lucide="route" class="service-icon"></i>
+                        <h3 class="service-title">Atendimento Rodoviário</h3>
+                        <p class="service-desc">Socorro em estradas</p>
+                    </div>
+                    <div class="service-card service-card-full">
+                        <i data-lucide="calendar" class="service-icon"></i>
+                        <h3 class="service-title">Transporte Programado</h3>
+                        <p class="service-desc">Remoções agendadas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Differentiators Section -->
+        <section class="differentiators-section">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header">
+                    <p class="section-overline">Por que nos escolher</p>
+                    <h2 class="section-title">
+                        Nossos <span class="text-highlight">Diferenciais</span>
+                    </h2>
+                </div>
+
+                <!-- Grid -->
+                <div class="differentiators-grid">
+                    <div class="differential-item">
+                        <div class="differential-icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <h3 class="differential-title">Atendimento 24 horas</h3>
+                    </div>
+                    <div class="differential-item">
+                        <div class="differential-icon">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <h3 class="differential-title">Chegada rápida</h3>
+                    </div>
+                    <div class="differential-item">
+                        <div class="differential-icon">
+                            <i data-lucide="truck"></i>
+                        </div>
+                        <h3 class="differential-title">Guincho leve e pesado</h3>
+                    </div>
+                    <div class="differential-item">
+                        <div class="differential-icon">
+                            <i data-lucide="tractor"></i>
+                        </div>
+                        <h3 class="differential-title">Transporte agrícola</h3>
+                    </div>
+                    <div class="differential-item">
+                        <div class="differential-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <h3 class="differential-title">Atendimento rural</h3>
+                    </div>
+                    <div class="differential-item">
+                        <div class="differential-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3 class="differential-title">Equipe especializada</h3>
+                    </div>
+                    <div class="differential-item">
+                        <div class="differential-icon">
+                            <i data-lucide="star"></i>
+                        </div>
+                        <h3 class="differential-title">Preço justo</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="galeria" class="gallery-section">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header">
+                    <p class="section-overline-light">Serviços Realizados</p>
+                    <h2 class="section-title-light">
+                        Confira Nossos <span class="text-yellow">Atendimentos</span>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Full Width Gallery -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/pxeqkyvv_WhatsApp%20Image%202026-03-24%20at%2015.11.16.jpeg" alt="Transporte de tratores" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/k1u33p30_WhatsApp%20Image%202026-03-24%20at%2015.11.17-2.jpeg" alt="Guincho pesado com tratores" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/i95yg8rf_WhatsApp%20Image%202026-03-24%20at%2015.11.30.jpeg" alt="Transporte de máquina agrícola" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://customer-assets.emergentagent.com/job_a40e9845-d494-4082-b081-c47d89234391/artifacts/kvob25yi_WhatsApp%20Image%202026-03-24%20at%2015.11.17.jpeg" alt="Guincho leve com carro" class="gallery-image">
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="container gallery-cta">
+                <p class="gallery-cta-text">
+                    Precisa de um atendimento como esses? <strong>Fale conosco agora.</strong>
+                </p>
+                <div class="gallery-cta-buttons">
+                    <a href="tel:+5562984043652" class="btn btn-primary btn-shine">
+                        <i data-lucide="phone" class="icon-sm"></i>
+                        Ligar Agora
+                    </a>
+                    <a href="https://wa.me/5562984043652?text=Ol%C3%A1!%20Preciso%20de%20um%20guincho.%20Podem%20me%20ajudar?" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coverage Area Section -->
+        <section class="coverage-section">
+            <div class="container">
+                <div class="coverage-grid">
+                    <!-- Text -->
+                    <div class="coverage-text">
+                        <p class="section-overline">Área de Atendimento</p>
+                        <h2 class="section-title section-title-large">
+                            Atendemos <span class="text-highlight">Toda a Região</span>
+                        </h2>
+                        <p class="coverage-description">
+                            Cobrimos Goianápolis e cidades vizinhas com atendimento rápido e eficiente. Não importa onde você esteja, estamos prontos para ajudar.
+                        </p>
+                    </div>
+
+                    <!-- Areas Grid -->
+                    <div class="areas-grid">
+                        <div class="area-badge">
+                            <i data-lucide="map-pin" class="area-icon"></i>
+                            <span>Goianápolis</span>
+                        </div>
+                        <div class="area-badge">
+                            <i data-lucide="map-pin" class="area-icon"></i>
+                            <span>Anápolis</span>
+                        </div>
+                        <div class="area-badge">
+                            <i data-lucide="map-pin" class="area-icon"></i>
+                            <span>Goiânia</span>
+                        </div>
+                        <div class="area-badge">
+                            <i data-lucide="map-pin" class="area-icon"></i>
+                            <span>Nerópolis</span>
+                        </div>
+                        <div class="area-badge">
+                            <i data-lucide="map-pin" class="area-icon"></i>
+                            <span>Terezópolis</span>
+                        </div>
+                        <div class="area-badge">
+                            <i data-lucide="map-pin" class="area-icon"></i>
+                            <span>Leopoldo de Bulhões</span>
+                        </div>
+                        <div class="area-badge">
+                            <i data-lucide="map-pin" class="area-icon"></i>
+                            <span>E toda região</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Call Section -->
+        <section id="contato" class="emergency-section" style="background-image: url('https://static.prod-images.emergentagent.com/jobs/a40e9845-d494-4082-b081-c47d89234391/images/a33f2258c82cc1fb29a105c08aa32aa44fc0fc57ad106d57fb412fd7eb703964.png');">
+            <div class="emergency-overlay"></div>
+            
+            <div class="emergency-content">
+                <p class="emergency-overline">Chamada de Emergência</p>
+                <h2 class="emergency-title">
+                    Precisando de Guincho em<br>
+                    <span class="text-yellow">Goianápolis?</span>
+                </h2>
+                <p class="emergency-subtitle">Atendimento imediato 24 horas</p>
+
+                <!-- Phone Numbers -->
+                <div class="emergency-phones">
+                    <a href="tel:+5562984043652" class="emergency-phone">
+                        <i data-lucide="phone" class="phone-icon"></i>
+                        <span>(62) 98404-3652</span>
+                    </a>
+                    <a href="tel:+5562991563645" class="emergency-phone">
+                        <i data-lucide="phone" class="phone-icon"></i>
+                        <span>(62) 99156-3645</span>
+                    </a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="emergency-cta">
+                    <a href="tel:+5562984043652" class="btn btn-primary btn-shine">
+                        <i data-lucide="phone" class="icon-sm"></i>
+                        Ligar Agora
+                    </a>
+                    <a href="https://wa.me/5562984043652?text=Ol%C3%A1!%20Preciso%20de%20um%20guincho.%20Podem%20me%20ajudar?" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header">
+                    <p class="section-overline">Avaliações</p>
+                    <h2 class="section-title">
+                        O Que Nossos<br><span class="text-highlight">Clientes Dizem</span>
+                    </h2>
+                </div>
+
+                <!-- Reviews Grid -->
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="review-text">"Atendimento muito rápido e profissional. Chegaram em menos de 30 minutos!"</p>
+                        <p class="review-author">— João S.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="review-text">"Guincho chegou antes do previsto. Excelente serviço, recomendo!"</p>
+                        <p class="review-author">— Maria L.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="review-text">"Transportaram meu trator com muita segurança. Equipe competente."</p>
+                        <p class="review-author">— Carlos M.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="review-text">"Excelente atendimento 24 horas. Me salvaram de madrugada!"</p>
+                        <p class="review-author">— Ana P.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Logo and Company Name -->
+            <div class="footer-brand">
+                <img 
+                    src="https://customer-assets.emergentagent.com/job_agro-socorro-go/artifacts/phj7ps3f_WhatsApp%20Image%202026-03-23%20at%2012.38.36.jpeg" 
+                    alt="Auto Socorro Goianápolis" 
+                    class="footer-logo"
+                >
+                <h3 class="footer-company">
+                    Auto Socorro Goianápolis<br>e Agro Serviços LTDA
+                </h3>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <div class="footer-contact-item">
+                    <i data-lucide="phone" class="footer-icon"></i>
+                    <a href="tel:+5562984043652">(62) 98404-3652</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i data-lucide="phone" class="footer-icon"></i>
+                    <a href="tel:+5562991563645">(62) 99156-3645</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i data-lucide="map-pin" class="footer-icon"></i>
+                    <span>Goianápolis - GO</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i data-lucide="clock" class="footer-icon"></i>
+                    <span>Atendimento 24 horas</span>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">
+                © 2026 Auto Socorro Goianápolis e Agro Serviços LTDA. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <!-- Mobile Fixed Bottom Bar -->
+    <div class="mobile-bottom-bar">
+        <a href="tel:+5562984043652" class="mobile-bar-call">
+            <i data-lucide="phone" class="icon-sm"></i>
+            <span>Ligar</span>
+        </a>
+        <a href="https://wa.me/5562984043652?text=Ol%C3%A1!%20Preciso%20de%20um%20guincho.%20Podem%20me%20ajudar?" target="_blank" rel="noopener noreferrer" class="mobile-bar-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon-sm">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Desktop Floating WhatsApp Button -->
+    <a href="https://wa.me/5562984043652?text=Ol%C3%A1!%20Preciso%20de%20um%20guincho.%20Podem%20me%20ajudar?" target="_blank" rel="noopener noreferrer" class="floating-whatsapp bounce-animation">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="floating-whatsapp-icon">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
